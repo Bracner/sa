@@ -1,0 +1,174 @@
+:root{
+    --var-verde: #1ed760;
+}
+body{
+    margin: 0;
+    background-color: #131313;
+    overflow-x: hidden;
+
+}
+
+h1{
+    font-family: Koulen;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    margin: 0;
+    position: absolute;
+    top: 40%;
+    left: 47.9%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%) ;
+    font-size: 180;
+    color: white;
+}
+h2{
+    font-family: Koulen, regular;
+    margin: 0;
+    position: absolute;
+    top: 60%;
+    left: 48%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%) ;
+    font-size: 70;
+    color: white;
+
+}
+div p{
+    font-family: Bahnschrift;
+    margin: 0;
+    position: absolute;
+    top: 68%;
+    left: 48%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%) ;
+    color: var(--var-verde);
+    font-size: 25;
+}
+
+.language{
+    position: relative;
+    float: right;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+.language a{
+    color: white;
+    text-decoration: none;
+    font-family: Bahnschrift;
+    padding: 5;
+    font-size: 20px;
+}
+.language a:hover{
+    opacity: 70%;
+    transition: 0.2s;
+}
+.icons{
+    position: absolute;
+    top: 40%;    
+}
+.icons i{
+    color: white;
+    flex-wrap: wrap;
+    display: block;
+    padding: 12px;
+    margin-left: 10px;     
+
+}
+
+ .menu{
+    position: relative;
+    right: 0px;
+    top: 45%;
+}
+.bottons{
+    position: relative;
+    float: right;
+    top: -100px;
+}
+.bottons ul{
+    list-style: none;
+}
+.bottons li{
+    margin: 50px;
+}
+
+
+.bottons a{
+    text-decoration: none;
+    color: white;
+    font-family: Bahnschrift;
+    font-size: 25;
+    transition: 0.5s;
+
+}
+.bottons a:hover{
+    font-size: 35;
+    padding: 2;
+    border-radius: 2%;
+    color: var(--var-verde);
+}
+
+input[type="checkbox"]{
+    display: none  ;
+}
+
+input[type="checkbox"]:checked ~ body{
+    background-color: aqua;
+}
+
+.botao{
+    width: 100px;
+    height: 100px;
+    border: 1px solid #1ed760;
+    background-color: var(--var-verde);
+    border-radius: 50%;
+    position: absolute;
+    top: 45%;
+    float: right;
+    right: -50px;
+    overflow: hidden;
+
+
+}
+.botao i{
+    color: white;
+    position: relative;
+    top: 35px;
+    left: 16px;
+    margin: auto;
+    overflow-x: hidden;
+
+}
+
+
+@media (min-width: 0px) and (max-width: 768px) {
+    .language a{
+        display: none;
+    }
+    .icons{
+        display: none;
+    }
+    .menu{
+        position: absolute;
+        display: inline;
+        left: 30%;
+    }
+    .botao{
+        width: 150px;
+        height: 150px;
+        border: 1px solid #1ed760;
+        background-color: var(--var-verde);
+        border-radius: 50%;
+        position: relative;
+        top: -100px;
+        
+      }
+    .botao i{
+        color: white;
+        position: relative;
+        top: 104px;
+        left: 55px;
+        margin: auto;
+    }
+}
